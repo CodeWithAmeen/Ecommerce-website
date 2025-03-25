@@ -1,0 +1,107 @@
+/* Slider Wrapper */
+.slider-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 130px; /* Adjust based on your design requirements */
+  position: relative;
+  overflow: hidden; /* Ensures no overflow issues */
+}
+
+/* Slider Images */
+.slick-slide img {
+  width: 100%;
+  height: auto;
+  display: block; /* Ensures images behave predictably */
+}
+
+/* Dots Navigation */
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  font-size: 0; /* Hide the dot text */
+  background: transparent;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.slick-dots li button::before {
+  content: '•'; /* Add custom dot */
+  font-size: 20px;
+  color: #ffffff; /* Adjust dot color */
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.slick-dots li.slick-active button::before {
+  transform: scale(1.3); /* Highlight active dot */
+  color: #ffcc00; /* Custom color for active dot */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .slider-wrapper {
+    margin-top: 100px; /* Reduce top margin for medium screens */
+  }
+
+  .slick-dots li button::before {
+    font-size: 18px; /* Adjust dot size */
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-wrapper {
+    margin-top: 80px; /* Reduce top margin for smaller screens */
+  }
+
+  .slick-slide img {
+    margin-top: 20px; /* Adjust top margin for smaller screens */
+  }
+
+  .slick-dots {
+    bottom: 15px; /* Adjust the distance from the bottom */
+  }
+
+  .slick-dots li {
+    margin: 0 4px; /* Adjust dot spacing */
+  }
+
+  .slick-dots li button::before {
+    font-size: 16px; /* Reduce dot size */
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-wrapper {
+    margin-top: 145px; /* Further reduce top margin for very small screens */
+  }
+
+  .slick-slide img {
+    margin-top: 10px; /* Further reduce top margin for very small screens */
+  }
+
+  .slick-dots {
+    bottom: 10px; /* Adjust the distance from the bottom */
+  }
+
+  .slick-dots li {
+    margin: 0 3px; /* Reduce spacing between dots */
+  }
+
+  .slick-dots li button::before {
+    font-size: 14px; /* Further reduce dot size */
+  }
+}

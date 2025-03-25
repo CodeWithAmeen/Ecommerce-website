@@ -1,0 +1,265 @@
+/* src/pages/CSS/Home.css */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+  padding: 50px;
+  font-size: 18px;
+}
+
+.new-arrivals-header {
+  text-align: center;
+  font-family: 'Urbanist', sans-serif;
+  margin-top: 60px; /* Adjust this value to move the header down */
+  font-size: 50px;
+}
+
+@media (max-width: 768px) {
+  .new-arrivals-header {
+    font-size: 36px;
+    margin-top: 60px; /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .new-arrivals-header {
+    font-size: 25px;
+    margin-top: 50px; /* Adjust for smaller screens */
+  }
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.banner {
+  position: relative;
+  margin: 20px 0;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.sales-text {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: #9c9025;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.shop-now-button {
+  background-color: #9c9025;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+}
+
+.shop-now-button:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #9c9025d5;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+  min-width: 150px;
+}
+
+.dropdown-item:hover .dropdown-submenu {
+  display: block;
+}
+
+.dropdown-submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #9c9025d5;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-subitem {
+  padding: 10px 20px;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+.dropdown-subitem:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .sales-text {
+    font-size: 36px;
+    padding: 8px 16px;
+  }
+
+  .shop-now-button {
+    font-size: 18px;
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sales-text {
+    font-size: 24px;
+    padding: 6px 12px;
+  }
+
+  .shop-now-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+.download-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.download-text {
+  font-size: 28px;
+}
+
+.download-image img {
+  width: 200px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 150px; /* Adjust this value to bring the image slightly to the left */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .download-text {
+    font-size: 24px;
+  }
+
+  .download-image img {
+    width: 180px;
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .download-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .download-text {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .download-image img {
+    width: 160px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .download-text {
+    font-size: 20px;
+  }
+
+  .download-image img {
+    width: 140px;
+  }
+}
+
+
+/* src/pages/CSS/Home.css */
+
+#video-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.video-header {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .video-header {
+    font-size: 32px;
+  }
+
+  #video-section {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-header {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  #video-section {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-header {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  #video-section {
+    padding: 20px;
+  }
+}
